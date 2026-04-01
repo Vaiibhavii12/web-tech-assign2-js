@@ -127,7 +127,7 @@
 
 @layer components {
   .glass-effect {
-    @apply backdrop-blur-md bg-white/5 border border-white/10;
+    @apply backdrop-blur-md bg-white/5 border border-white/10 transition-all duration-300 ease-out;
   }
   
   .gold-text {
@@ -138,19 +138,15 @@
     @apply text-primary drop-shadow-lg shadow-primary/50;
   }
   
-  .smooth-transition {
-    @apply transition-all duration-300 ease-out;
-  }
-  
   .card-elegant {
-    @apply bg-card border border-border rounded-xl p-6 shadow-lg smooth-transition hover:shadow-xl hover:border-primary/30;
+    @apply bg-card border border-border rounded-xl p-6 shadow-lg transition-all duration-300 ease-out hover:shadow-xl hover:border-primary/30;
   }
   
   .button-primary {
-    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold smooth-transition hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20;
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20;
   }
   
   .button-secondary {
-    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold smooth-transition hover:bg-secondary/80 border border-border;
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-secondary/80 border border-border;
   }
 }

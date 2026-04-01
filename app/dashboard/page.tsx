@@ -61,7 +61,7 @@ export default function DashboardPage() {
                   <Clock className="w-4 h-4 text-foreground/40" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{tool.name}</h3>
-                <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 smooth-transition">
+                <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out">
                   <span className="text-sm">Open</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>
@@ -89,12 +89,12 @@ export default function DashboardPage() {
                 href={`/dashboard/tools/${tool.id}`}
                 className="card-elegant group"
               >
-                <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4 group-hover:bg-primary/20 smooth-transition">
+                <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4 group-hover:bg-primary/20 transition-all duration-300 ease-out">
                   <IconComponent className="w-6 h-6 gold-text" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{tool.name}</h3>
                 <p className="text-foreground/60 text-sm mb-4">{tool.desc}</p>
-                <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 smooth-transition">
+                <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out">
                   <span className="text-sm">Launch</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>

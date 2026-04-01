@@ -62,7 +62,7 @@ This is a simulated translation. In production, this would be translated to ${ta
           <div className="card-elegant">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold">Source Language</h2>
-              <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition">
+              <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out">
                 <Volume2 className="w-5 h-5 text-foreground/60" />
               </button>
             </div>
@@ -70,7 +70,7 @@ This is a simulated translation. In production, this would be translated to ${ta
             <select
               value={sourceLang}
               onChange={(e) => setSourceLang(e.target.value)}
-              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none mb-4"
+              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none mb-4"
             >
               {languages.map((lang) => (
                 <option key={lang} value={lang} className="bg-card text-foreground">
@@ -83,7 +83,7 @@ This is a simulated translation. In production, this would be translated to ${ta
               value={sourceText}
               onChange={(e) => setSourceText(e.target.value)}
               placeholder="Enter text to translate..."
-              className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 smooth-transition focus:border-primary/50 outline-none resize-none h-64"
+              className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 transition-all duration-300 ease-out focus:border-primary/50 outline-none resize-none h-64"
             />
 
             <div className="mt-4 text-sm text-foreground/60">
@@ -100,12 +100,12 @@ This is a simulated translation. In production, this would be translated to ${ta
               <div className="flex gap-2">
                 <button
                   onClick={handleSwap}
-                  className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition"
+                  className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out"
                   title="Swap languages"
                 >
                   <ArrowRightLeft className="w-5 h-5 text-foreground/60" />
                 </button>
-                <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition">
+                <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out">
                   <Volume2 className="w-5 h-5 text-foreground/60" />
                 </button>
               </div>
@@ -114,7 +114,7 @@ This is a simulated translation. In production, this would be translated to ${ta
             <select
               value={targetLang}
               onChange={(e) => setTargetLang(e.target.value)}
-              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none mb-4"
+              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none mb-4"
             >
               {languages.map((lang) => (
                 <option key={lang} value={lang} className="bg-card text-foreground">
@@ -133,12 +133,12 @@ This is a simulated translation. In production, this would be translated to ${ta
               <div className="mt-4 flex gap-2">
                 <button
                   onClick={handleCopy}
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-secondary/50 rounded-lg smooth-transition text-sm"
+                  className="flex items-center gap-2 px-4 py-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out text-sm"
                 >
                   {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                   {copied ? 'Copied!' : 'Copy'}
                 </button>
-                <button className="flex items-center gap-2 px-4 py-2 hover:bg-secondary/50 rounded-lg smooth-transition text-sm">
+                <button className="flex items-center gap-2 px-4 py-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out text-sm">
                   <Download className="w-4 h-4" />
                   Export
                 </button>

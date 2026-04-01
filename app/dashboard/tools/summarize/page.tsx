@@ -97,7 +97,7 @@ Summary Length: ~${Math.round(content.length * 0.3)} characters`;
               <div>
                 <label className="block text-sm font-medium mb-2">Upload Document</label>
                 <label className="block cursor-pointer">
-                  <div className="border-2 border-dashed border-border rounded-lg p-4 text-center hover:border-primary/50 smooth-transition bg-secondary/20">
+                  <div className="border-2 border-dashed border-border rounded-lg p-4 text-center hover:border-primary/50 transition-all duration-300 ease-out bg-secondary/20">
                     <Upload className="w-6 h-6 mx-auto text-foreground/40 mb-2" />
                     <p className="text-xs text-foreground/60">Upload .txt or .pdf files</p>
                   </div>
@@ -140,7 +140,7 @@ Summary Length: ~${Math.round(content.length * 0.3)} characters`;
               value={content}
               onChange={(e) => setContent(e.target.value)}
               placeholder="Paste your article, document, or any text here to summarize..."
-              className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 smooth-transition focus:border-primary/50 outline-none resize-none h-40"
+              className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 transition-all duration-300 ease-out focus:border-primary/50 outline-none resize-none h-40"
             />
 
             <div className="mt-4 text-sm text-foreground/60">
@@ -156,12 +156,12 @@ Summary Length: ~${Math.round(content.length * 0.3)} characters`;
                 <div className="flex gap-2">
                   <button
                     onClick={handleCopy}
-                    className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm"
+                    className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm"
                   >
                     {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                     {copied ? 'Copied!' : 'Copy'}
                   </button>
-                  <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm">
+                  <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm">
                     <Download className="w-4 h-4" />
                     Export
                   </button>

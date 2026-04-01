@@ -50,9 +50,9 @@ export default function Home() {
             <span className="text-2xl font-bold gold-text">NEXUS-AI</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-foreground/70 hover:text-primary smooth-transition">Features</a>
-            <a href="#tools" className="text-foreground/70 hover:text-primary smooth-transition">Tools</a>
-            <a href="#pricing" className="text-foreground/70 hover:text-primary smooth-transition">Pricing</a>
+            <a href="#features" className="text-foreground/70 hover:text-primary transition-colors duration-300">Features</a>
+            <a href="#tools" className="text-foreground/70 hover:text-primary transition-colors duration-300">Tools</a>
+            <a href="#pricing" className="text-foreground/70 hover:text-primary transition-colors duration-300">Pricing</a>
           </div>
           <Link href="/dashboard" className="button-primary">
             Get Started
@@ -104,13 +104,13 @@ export default function Home() {
                   className="card-elegant group cursor-pointer"
                 >
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 smooth-transition">
+                    <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-all duration-300">
                       <IconComponent className="w-6 h-6 gold-text" />
                     </div>
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">{tool.name}</h3>
                   <p className="text-foreground/60 mb-4">{tool.description}</p>
-                  <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 smooth-transition">
+                  <div className="flex items-center gap-2 text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <span>Explore</span>
                     <ArrowRight className="w-4 h-4" />
                   </div>
@@ -193,8 +193,8 @@ export default function Home() {
           <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row items-center justify-between">
             <p className="text-foreground/60 text-sm mb-4 md:mb-0">&copy; 2024 NEXUS-AI. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="#" className="text-foreground/60 hover:text-primary smooth-transition"><Github className="w-5 h-5" /></a>
-              <a href="#" className="text-foreground/60 hover:text-primary smooth-transition"><Twitter className="w-5 h-5" /></a>
+              <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-300"><Github className="w-5 h-5" /></a>
+              <a href="#" className="text-foreground/60 hover:text-primary transition-colors duration-300"><Twitter className="w-5 h-5" /></a>
             </div>
           </div>
         </div>

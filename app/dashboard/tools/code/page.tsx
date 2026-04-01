@@ -60,7 +60,7 @@ console.log(solution());`;
                 <select
                   value={language}
                   onChange={(e) => setLanguage(e.target.value)}
-                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
                 >
                   {languages.map((lang) => (
                     <option key={lang} value={lang} className="bg-card text-foreground">
@@ -76,7 +76,7 @@ console.log(solution());`;
                   value={prompt}
                   onChange={(e) => setPrompt(e.target.value)}
                   placeholder="e.g., Write a function that checks if a number is prime"
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 smooth-transition focus:border-primary/50 outline-none resize-none h-32"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-foreground/40 transition-all duration-300 ease-out focus:border-primary/50 outline-none resize-none h-32"
                 />
               </div>
 
@@ -109,12 +109,12 @@ console.log(solution());`;
                 <div className="flex gap-2">
                   <button
                     onClick={handleCopy}
-                    className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm"
+                    className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm"
                   >
                     {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                     {copied ? 'Copied!' : 'Copy'}
                   </button>
-                  <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm">
+                  <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm">
                     <Download className="w-4 h-4" />
                     Download
                   </button>

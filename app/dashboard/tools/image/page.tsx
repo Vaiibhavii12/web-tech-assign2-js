@@ -81,7 +81,7 @@ export default function ImageAnalyzerPage() {
             <h2 className="text-lg font-semibold mb-4">Upload Image</h2>
 
             <label className="block cursor-pointer mb-4">
-              <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 smooth-transition bg-secondary/20">
+              <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 transition-all duration-300 ease-out bg-secondary/20">
                 <Upload className="w-12 h-12 mx-auto text-foreground/40 mb-3" />
                 <p className="text-sm font-medium mb-1">Drop image here or click to upload</p>
                 <p className="text-xs text-foreground/40">PNG, JPG, GIF up to 10MB</p>
@@ -104,7 +104,7 @@ export default function ImageAnalyzerPage() {
                   />
                   <button
                     onClick={handleClearImage}
-                    className="absolute top-2 right-2 p-2 bg-black/50 hover:bg-black/70 rounded-lg smooth-transition"
+                    className="absolute top-2 right-2 p-2 bg-black/50 hover:bg-black/70 rounded-lg transition-all duration-300 ease-out"
                   >
                     <X className="w-4 h-4" />
                   </button>
@@ -138,12 +138,12 @@ export default function ImageAnalyzerPage() {
                 <div className="flex gap-2">
                   <button
                     onClick={handleCopy}
-                    className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm"
+                    className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm"
                   >
                     {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                     {copied ? 'Copied!' : 'Copy'}
                   </button>
-                  <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm">
+                  <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm">
                     <Download className="w-4 h-4" />
                     Export
                   </button>

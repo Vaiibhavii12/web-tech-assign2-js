@@ -65,7 +65,7 @@ export default function PricingPage() {
             <Zap className="w-8 h-8 gold-text" />
             <span className="text-2xl font-bold gold-text">NEXUS-AI</span>
           </div>
-          <Link href="/" className="text-foreground/70 hover:text-primary smooth-transition">Back Home</Link>
+          <Link href="/" className="text-foreground/70 hover:text-primary transition-all duration-300 ease-out">Back Home</Link>
         </div>
       </nav>
 

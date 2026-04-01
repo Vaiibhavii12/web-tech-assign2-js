@@ -45,7 +45,7 @@ export default function SettingsPage() {
                 type="text"
                 value={formState.fullName}
                 onChange={(e) => setFormState({ ...formState, fullName: e.target.value })}
-                className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+                className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
               />
             </div>
 
@@ -55,7 +55,7 @@ export default function SettingsPage() {
                 type="email"
                 value={formState.email}
                 onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+                className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function SettingsPage() {
             <select
               value={formState.theme}
               onChange={(e) => setFormState({ ...formState, theme: e.target.value })}
-              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+              className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
             >
               <option value="dark" className="bg-card">Dark</option>
               <option value="light" className="bg-card">Light</option>
@@ -140,7 +140,7 @@ export default function SettingsPage() {
               </div>
               <button
                 onClick={() => setShowApiKey(!showApiKey)}
-                className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition"
+                className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out"
               >
                 {showApiKey ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
@@ -188,7 +188,7 @@ export default function SettingsPage() {
             <p className="text-sm mb-4">
               Logging out will clear your session. You'll need to sign in again to access your account.
             </p>
-            <button className="flex items-center gap-2 px-4 py-2 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 smooth-transition border border-red-500/30">
+            <button className="flex items-center gap-2 px-4 py-2 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 transition-all duration-300 ease-out border border-red-500/30">
               <LogOut className="w-4 h-4" />
               Logout
             </button>
@@ -198,7 +198,7 @@ export default function SettingsPage() {
             <p className="text-sm mb-4">
               Deleting your account is permanent and cannot be undone. All your data will be lost.
             </p>
-            <button className="px-4 py-2 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 smooth-transition border border-red-500/30">
+            <button className="px-4 py-2 bg-red-500/20 text-red-400 rounded-lg hover:bg-red-500/30 transition-all duration-300 ease-out border border-red-500/30">
               Delete Account
             </button>
           </div>

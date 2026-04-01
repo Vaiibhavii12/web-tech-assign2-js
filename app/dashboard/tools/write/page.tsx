@@ -112,7 +112,7 @@ Generated with NEXUS-AI • Content Quality: Excellent • Readability Score: 92
                   value={topic}
                   onChange={(e) => setTopic(e.target.value)}
                   placeholder="e.g., The Future of AI in Education"
-                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground placeholder-foreground/40 smooth-transition focus:border-primary/50 outline-none"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground placeholder-foreground/40 transition-all duration-300 ease-out focus:border-primary/50 outline-none"
                 />
               </div>
 
@@ -121,7 +121,7 @@ Generated with NEXUS-AI • Content Quality: Excellent • Readability Score: 92
                 <select
                   value={contentType}
                   onChange={(e) => setContentType(e.target.value)}
-                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
                 >
                   {contentTypes.map((type) => (
                     <option key={type} value={type} className="bg-card">
@@ -136,7 +136,7 @@ Generated with NEXUS-AI • Content Quality: Excellent • Readability Score: 92
                 <select
                   value={tone}
                   onChange={(e) => setTone(e.target.value)}
-                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground smooth-transition focus:border-primary/50 outline-none"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-2 text-foreground transition-all duration-300 ease-out focus:border-primary/50 outline-none"
                 >
                   {tones.map((t) => (
                     <option key={t} value={t} className="bg-card">
@@ -192,19 +192,19 @@ Generated with NEXUS-AI • Content Quality: Excellent • Readability Score: 92
                   <button
                     onClick={handleRegenerate}
                     disabled={loading}
-                    className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm disabled:opacity-50"
+                    className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm disabled:opacity-50"
                   >
                     <RefreshCw className="w-4 h-4" />
                     Regenerate
                   </button>
                   <button
                     onClick={handleCopy}
-                    className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm"
+                    className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm"
                   >
                     {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
                     {copied ? 'Copied!' : 'Copy'}
                   </button>
-                  <button className="p-2 hover:bg-secondary/50 rounded-lg smooth-transition flex items-center gap-2 text-sm">
+                  <button className="p-2 hover:bg-secondary/50 rounded-lg transition-all duration-300 ease-out flex items-center gap-2 text-sm">
                     <Download className="w-4 h-4" />
                     Export
                   </button>
