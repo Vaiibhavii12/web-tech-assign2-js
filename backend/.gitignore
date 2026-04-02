@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# Environment variables
+.env*.local
+.env
+
+# Common ignores
+node_modules
+.next/
+.DS_Store
+=======
+node_modules/
+.env
+.env.local
+.env.*.local
+dist/
+build/
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+uploads/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.turbo/
+.next/
+>>>>>>> fdb9346 (initial commit)
